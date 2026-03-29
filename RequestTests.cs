@@ -8,6 +8,7 @@ public class RequestTests
     public void Setup()
     {
         _services = [];
+        _services.AddSingleton<ITestLogger, NoopTestLogger>();
         _services.AddMediator();
     }
 
